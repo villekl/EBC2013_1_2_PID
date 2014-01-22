@@ -4,11 +4,11 @@
 
 /*MAP analog in: 41-1003 (0.2-4.9V) Sensor: MPX4250AP
  //TYPICAL: 51-972 = 20-250kPa
- 3      How the display is wired. Numbers represent shift register output numbers
+   3      How the display is wired. Numbers represent shift register output numbers
  2[ ]4
- 1 
+   1 
  5[ ]7           These are the characters converted to decimal and listed in a string.                        (4)(7)
- 6  o8         eg. "1" in the register outputs is created with output pins 4 and 7 high. In binary this is 00010010 which in dec is 18. (2^5+2^1 = 16+2 = 18) */
+   6  o8         eg. "1" in the register outputs is created with output pins 4 and 7 high. In binary this is 00010010 which in dec is 18. (2^5+2^1 = 16+2 = 18) */
 //          [n+1]   0    1   2    3    4    5    6    7   8    9  10P   11d  12c  13A  14C  15L 16E  17N  18U 19b  20t  21r  22F  23J 24- 25blank 26m  27i
 byte string[28] = {
   126, 18, 188, 182, 210, 230, 238, 50, 254, 246, 248, 158, 140, 250, 108, 76, 236, 122, 94, 206, 200, 136, 232, 22, 128,  0,    170, 2};
